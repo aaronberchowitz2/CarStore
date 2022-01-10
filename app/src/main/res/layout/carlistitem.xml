@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:elevation="10dp"
+    android:layout_margin="3dp"
+    android:padding="10dp"
+    app:cardElevation="10dp">
+
+<LinearLayout
+    android:padding="11dp"
+    android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/card"
+        android:orientation="horizontal"
+    android:layout_margin="10dp"
+        >
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:id="@+id/imagecar"
+            android:layout_marginRight="7dp"
+            ></ImageView>
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="7dp">
+
+            <TextView
+                android:id="@+id/carname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:textSize="20dp"
+                android:text="Car Name"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-medium"
+                ></TextView>
+             <TextView
+                 android:id="@+id/carmodel"
+                 android:textSize="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Car Name"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-medium"
+                ></TextView>
+             <TextView
+                 android:id="@+id/caryear"
+                 android:textSize="15dp"
+                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Car Name"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-medium"
+                ></TextView>
+             <TextView
+                 android:id="@+id/carprice"
+                 android:textSize="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price"
+
+                android:textColor="@color/red"
+                android:fontFamily="sans-serif-medium"
+                ></TextView>
+
+        </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/flowbtn"
+                android:backgroundTint="@color/yellow"
+                android:layout_gravity="end"
+                android:layout_marginLeft="10dp"
+                android:layout_width="50dp"
+                android:layout_height="45dp"
+                android:src="@drawable/ic_baseline_more_vert_24"></ImageButton>
+
+
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

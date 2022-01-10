@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/lighttheme"
+    tools:context=".addcar">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD CAR"
+        android:textSize="20dp"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        ></TextView>
+    <ImageView
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/addimage"
+        android:src="@drawable/ic_baseline_camera_alt_24"
+        ></ImageView>
+
+    <EditText
+
+        android:id="@+id/addname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ENTER CAR NAME"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:background="@drawable/borders"
+        android:textColor="@color/black"></EditText>
+
+    <EditText
+        android:id="@+id/addmodel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ENTER CAR MODEL"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/borders"
+        android:textColor="@color/black"></EditText>
+
+    <EditText
+        android:id="@+id/addyear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/borders"
+        android:hint="ENTER CAR YEAR"
+        android:numeric="integer"
+        android:padding="10dp"
+
+        android:textColor="@color/black"
+        android:textSize="18sp"></EditText>
+
+
+    <EditText
+        android:id="@+id/addprice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/borders"
+        android:hint="ENTER CAR PRICE"
+        android:numeric="integer"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"></EditText>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Car"
+        android:layout_marginBottom="6dp"
+        android:gravity="center"
+        android:background="@drawable/btn"
+        android:id="@+id/add"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+></Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:visibility="gone"
+        android:layout_marginLeft="-100dp"
+        android:layout_marginBottom="6dp"
+        android:gravity="center"
+        android:background="@drawable/btn"
+        android:id="@+id/edit"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+></Button>
+        <!--<Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:visibility="gone"
+        android:layout_marginBottom="6dp"
+        android:gravity="center"
+        android:background="@drawable/btn"
+        android:id="@+id/edit"
+        android:layout_marginLeft="-100dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+></Button>-->
+        <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Car List"
+        android:layout_marginBottom="6dp"
+        android:gravity="center"
+        android:background="@drawable/btn"
+        android:id="@+id/lisdisp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+></Button>
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
